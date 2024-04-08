@@ -1,0 +1,28 @@
+
+.formulario {
+    margin-bottom: 20px;
+  }
+  
+  .input-tasca {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .btn-afegir {
+    padding: 10px 20px;
+    background-color: #4a9df5;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-afegir:hover {
+    background-color: #3390f3;
+  }
+  

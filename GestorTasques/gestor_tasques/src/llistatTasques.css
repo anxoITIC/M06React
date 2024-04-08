@@ -1,0 +1,15 @@
+.container {
+    text-align: center;
+  }
+  
+  .title {
+    color: #333;
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  
+  .author {
+    color: #666;
+    font-size: 18px;
+  }
+  
