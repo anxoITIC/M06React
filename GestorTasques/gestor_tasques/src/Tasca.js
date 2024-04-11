@@ -1,18 +1,16 @@
 import React from 'react';
-import './Tasca.css'; // Importa los estilos CSS
+import './Tasca.css'; 
 
 function Tasca({ id, tasca, eliminarTasca, completarTasca }) {
   return (
     <li className="tasca">
-      {/* Mostrar el texto de la tarea */}
       <div
         className="text"
         style={{ textDecoration: tasca.completada ? 'line-through' : 'none' }}
-        onClick={() => completarTasca(id)} // Marcar como completada al hacer clic
+        onClick={() => completarTasca(id)} 
       >
         {tasca.text}
       </div>
-      {/* Botón para eliminar la tarea */}
       <button className="btn-eliminar" onClick={() => eliminarTasca(id)}>Eliminar</button>
     </li>
   );

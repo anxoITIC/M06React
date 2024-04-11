@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
-import './FormulariTasques.css'; // Importa los estilos CSS
+import './FormulariTasques.css'; 
 
 function FormulariTasques(props) {
-  // Estado para almacenar el texto de la nueva tarea
+
   const [textTasca, setTextTasca] = useState('');
 
-  // Función para manejar el cambio en el input de texto
   const canviTextTasca = e => {
     setTextTasca(e.target.value);
     console.log('value is:', e.target.value);
   };
 
-  // Función para enviar el formulario y agregar una nueva tarea
+  //agregar una nova tasca
   const enviarForm = e => {
     e.preventDefault();
     const tascaNova = {
@@ -19,9 +18,10 @@ function FormulariTasques(props) {
       completada: false
     };
     props.funcAfegirTasca(tascaNova);
-    setTextTasca(''); // Limpiar el estado después de agregar la tarea
+    setTextTasca('');
   };
 
+  //component
   return (
     <form className="formulario" onSubmit={enviarForm}>
       <input
